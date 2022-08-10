@@ -62,7 +62,7 @@ export class TicTacToe {
     #fillValues() {
         const all_moves = this.storage.getData();
         for (let id in all_moves) {
-            this.board.children[id].textContent = all_moves[id];
+            this.board.children[id - 1].textContent = all_moves[id];
         }
     }
 
